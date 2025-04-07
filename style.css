@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b); /* Degradado púrpura-rosado */
+    display: grid;
+    place-items: center;
+}
+
+.image-cuc{
+    max-height: 200px;
+}
+
+.calculadora {
+    background-color: #3a1c71; /* Gris más claro para suavizar el contraste */
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: #D3D3D3; /* Gris claro */
+    color: #333333; /* Texto oscuro */    
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.operacion {
+    font-size: 1.2rem; /* Tamaño más pequeño para la operación */
+    color: #6D6875;    /* Cambiar el color de la operación */
+}
+
+.btn {
+    background-color: #6D6875; /* Púrpura grisáceo */
+    color: #FFFFFF; /* Texto blanco */  
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #B5838D; /* Púrpura rosado */
+}
+
+#cero {
+    grid-column: span 2;
+    background-color: #6D6875; /* Púrpura grisáceo */
+}
+
+#c{
+    background-color: #B5838D;
+}
+
+#borrar{
+    background-color: #B5838D; /* Púrpura rosado */
+}
+
+#dividir{
+    background-color: #B5838D; /* Púrpura rosado */
+}
+
+#multi{
+    background-color: #B5838D; /* Púrpura rosado */
+}
+
+#res{
+    background-color: #B5838D; /* Púrpura rosado */
+}
+
+#sum{
+    background-color: #B5838D; /* Púrpura rosado */
+}
+
+#deci{
+    background-color: #6D6875; /* Púrpura grisáceo */
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #FF69B4; /* Rosa fuerte */
+    color: #FFFFFF; /* Blanco */    
+}
+
+#igual:hover {
+    background-color: #FF69B4;
+}
